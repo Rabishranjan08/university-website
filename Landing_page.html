@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+function abc() 
+{
+   var retVal = prompt("Enter your name : ", "your name here");
+               document.write("You have entered : " + retVal);
+               
+}
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style2.css">
+<body>
+<!-- Navigation -->
+<div class="mark">
+  <a href="aboutus.html">ABOUT US</a>
+  <a href="course.html">COURSES</a>
+  <a href="admission.html">ADMISSIONS</a>
+  <a href="placement.HTML">PLACEMENT</a>
+  <a href="faculty.html">FACULTIES</a>
+  <a href="contact us.html">CONTACT</a>
+  <a href="loginpage.html" class="right" onclick="abc()">LOGIN</a>
+</div>
+
+
+<link rel="stylesheet" type="text/css" href="style3.css">
+<div class="container">
+
+  <img class="mySlides" src="picture1.jpg"
+  style="width:100%">
+  <img class="mySlides" src="picture10.jpg"
+  style="width:100%">
+  <img class="mySlides" src="picture14.jpg"
+  style="width:100%">
+  <div class="centered"><font size="100" color="mediumspringgreen" ><marquee>JOSEPH UNIVERSITY</b></marquee></font></h1><br>
+  </div>
+  
+</div>
+
+<p style="background: #000;padding: 150px;margin: 0%;color: white;text-align: center;">WE ARE THE BEST<br><br>@JOSEPH UNIVERSITY</p>
+<div class="footer">
+ <a href="signup.html"><button class="btn success">Register</button></a>
+<script>
+
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000);
+}
+</script>
+</div>
+<
+
+</body>
+</html>
+
